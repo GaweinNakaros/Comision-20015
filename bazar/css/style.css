@@ -1,0 +1,27 @@
+
+
+h1 {
+    color:red !important;
+    /*background-color: blueviolet;*/
+    font-size: 50px;
+    font-family: 'Times New Roman';
+}
+
+p {
+    color: brown;
+}
+
+.pcolor { /* el punto llama al atributo "class" */
+
+    color:blueviolet;
+}
+
+#pcolor1 { /* el # llama al atributo "id" */
+
+    color:green
+}
+
+header {
+
+    background-color: darkred;
+}
