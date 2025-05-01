@@ -1,5 +1,47 @@
 
 
+
+html {
+
+    font-size: 1rem;
+
+}
+
+body {
+
+    background-image: url(/bazar/img/fondo.jpg!w700wp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+main {
+
+    background-image: url(/bazar/img/fondo.jpg!w700wp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+p {
+    color: orange;
+}*/
+
+
+.cursiva {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+header {
+
+    background-color: beige;
+
+}
+
 h1 {
     color:red !important;
     /*background-color: blueviolet;*/
@@ -7,8 +49,16 @@ h1 {
     font-family: 'Times New Roman';
 }
 
-p {
-    color: brown;
+ul { /*Order List (ol), me crea una linea ordenada / under list (ul), me cra una lista desordenada*/
+
+    list-style: none;
+    font-weight: bolder;
+
+}
+
+li a { /* Componentes de la lista */
+
+    text-decoration: none;
 }
 
 .pcolor { /* el punto llama al atributo "class" */
@@ -21,7 +71,24 @@ p {
     color:green
 }
 
-header {
+.recuadro {
 
-    background-color: darkred;
+    color: yellow;
+    font-size: 3em;
+
+    width: 50%;
+    height: 50%;
+    background-color: brown;
+    border: 3px solid blue;
+}
+
+footer {
+
+    background-color: beige;
+}
+
+.fa-instagram {
+
+    font-size: 150px;
+    color: red;
 }
