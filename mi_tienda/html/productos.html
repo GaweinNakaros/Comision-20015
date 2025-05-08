@@ -8,24 +8,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- conectamos el index con el archivo css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Piñatas Personalizadas </title>
+    <title> Productos </title>
 
 </head> 
 
 <header><!-- encabezado -->
 
+    <img class = "imglogo" src="../img/logo.webp"> <!-- logo de la tienda -->
     <h1> Productos </h1> <!-- titulo, hay del 1 al 6, cambian el tamaño -->
-    <hr> <!-- Etiqueta de linea, crea una linea de separacion -->
-    <h4> Como armo un pedido? </h4>
     <hr> <!-- Etiqueta de linea, crea una linea de separacion -->
 
     <nav> 
         <ul> <!-- Order List (ol), me crea una linea ordenada / under list (ul), me cra una lista desordenada-->
             
-            <li>Ofertas</li>
-            <li>Contactos</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
 
         </ul>    
     </nav>
@@ -34,8 +34,6 @@
 
 <main> <!-- Contenido principal -->
 
-    <p> Esta es una web de Piñatas... </p> <!-- parrafo, tiene concepto de palabra clave-->
-
     <section> <!-- Etiqueta de seccion / crea un espacio para sumar contenido-->
 
         <!-- Creamos una seccion para cargar imagenes desde una ruta relativa o desde una ruta absoluta -->
@@ -43,12 +41,23 @@
         <!-- Rutas relativas -->
         <!-- etiquetas <a> <img> son etiquetas que trabajan de manera lineale -->
         <!-- para generar un salto se puede usar una etiqueta <br> -->
-        <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-44bbe7f76ce2f6abdb17334260165605-1024-1024.webp" width="20%">
-        
-        <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-3dd37d5aab0719980517426049538851-1024-1024.webp" width="20%">
+         <div class="contenedor">
+            <div class="item">
+                <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-44bbe7f76ce2f6abdb17334260165605-1024-1024.webp" width="20%">
+                <p>Nombre</p>
+                <p>Precio: $500</p>
 
-        <!-- Ruta absoluta -->
-        <img src="./img/cuelga_escoba.webp" width="20%">
+            </div>
+            <div class="item">
+                <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-3dd37d5aab0719980517426049538851-1024-1024.webp" width="20%">
+                <p>Nombre</p>
+                <p>Precio: $500</p>
+            </div>
+            <div class="item">
+                <img src="../img/cuelga_escoba.webp" width="20%"> <!-- Ruta absoluta -->
+                <p>Nombre</p>
+                <p>Precio: $500</p>
+            </div>        
 
     </section>
 
@@ -60,11 +69,13 @@
 
 </main>
 
-<!-- Creamos un boton para volver -->
-<a href="index.html">Home</a>
-
 <footer>
+    
+    <p>&copy; 2023 Mi Tienda. Todos los derechos reservados.</p>
 
+    <p>Redes Sociales: 
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
 </footer>
 
 </html>

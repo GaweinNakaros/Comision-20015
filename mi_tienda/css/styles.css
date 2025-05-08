@@ -1,0 +1,116 @@
+
+
+
+html {
+
+    font-size: 1rem;
+
+}
+
+/* Contenedores */
+
+.contenedor {
+
+    display: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+
+}
+
+.item {
+
+    flex: 1, 1, 200px;
+    margin: 10px;
+    background-color: beige;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+
+}
+
+/*
+body {
+
+    background-image: url(./img/); falta cargar imagen
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+main {
+
+    background-image: url(./img/); falta cargar imagen
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*/
+
+.cursiva {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+.imglogo {
+
+    margin: 50px;
+    border: 3px outset solid red;
+    width: 150px; /* Ancho fijo de 150px para ajustar el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+
+}
+
+nav ul li a {
+    font-size: 1.2rem !important; /* Aumenta el tamaño del texto */
+    font-weight: bold !important; /* Opcional: hace el texto más grueso */
+    color: black !important;  /* Asegúrate de que el color sea visible */
+}
+
+p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    color: black; /* Asegúrate de que el color sea visible */
+}
+
+.pcolor { /* el punto llama al atributo "class" */
+
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    color:blueviolet;
+}
+
+#pcolor1 { /* el # llama al atributo "id" */
+
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    color:green;
+}
+
+.recuadro p {
+
+    color: white !important;
+    font-size: 3em;
+    width: 25%;
+    height: auto;
+    background-color: black;
+    border: 3px solid green;
+}
+
+footer {
+
+    background-color: beige;
+}
+
+.fa-instagram {
+
+    font-size: 150px;
+    color: red;
+}
+
+
+
