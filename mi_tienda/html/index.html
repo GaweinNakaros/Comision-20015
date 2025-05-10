@@ -13,8 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 
+    <!-- ... otros enlaces ... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- conectamos el index con el archivo css -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <title>Mi Tienda</title>
     <!-- Ejemplo de uso de etiqueta style
@@ -47,23 +51,57 @@
 
     <div class="recuadro">
 
-        <p>Texto de Ejemplo</p> <!-- parrafo, tiene concepto de palabra clave-->
+        <p class="body-text">Texto de Ejemplo</p> <!-- parrafo, tiene concepto de palabra clave-->
 
     </div>
 
     <main> <!-- Contenido principal -->
 
-        <p> Esta es una tienda... </p> <!-- parrafo, tiene concepto de palabra clave-->
+        <p class="body-text"> Esta es una tienda... </p> <!-- parrafo, tiene concepto de palabra clave-->
         <p class="pcolor"> Texto ejemplo</p>
         <p id="pcolor1">  Texto ejemplo</p>
 
     </main>
 
-    <footer>
-        <p>&copy; 2023 Mi Tienda. Todos los derechos reservados.</p>
-        <p>Redes Sociales: 
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <!-- Footer -->
+    
+    <footer class="footer-container">
+        <div class="footer-column">
+            <h4>Mi Tienda</h4>
+            <p class="footer-text">© 2025 Mi Tienda. Todos los derechos reservados.</p>
+            <pp class="footer-text">Dirección: Calle Falsa 123, Ciudad</p>
+            <pp class="footer-text">Horario: Lunes a Viernes de 9:00 a 18:00</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Atención al Cliente:</h4>
+            <p><a href="#">Preguntas Frecuentes</a></p>
+            <p><a href="#">Métodos de Pago</a></p>
+            <p><a href="#">Envíos y Devoluciones</a></p>
+            <p><a href="#">Sobre Nosotros</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Legales:</h4>
+            <p><a href="#">Política de Privacidad</a></p>
+            <p><a href="#">Términos y Condiciones</a></p>
+            <p><a href="#">Suscríbete a nuestro boletín</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contacto:</h4>
+            <p class="footer-text">contacto@example.com</p>
+            <p class="footer-text">+54 11 15 1111-1111</p>
+            <p class="footer-text">Redes Sociales:</p>
+            <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            </div>
+        </div>
     </footer>
 
 </body>

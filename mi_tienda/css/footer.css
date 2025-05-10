@@ -1,0 +1,94 @@
+.footer-container {
+  display: flex; /* Flexbox para alinear ítems */
+  flex-direction: row; /* Dirección de los ítems en fila */
+  justify-content: space-between; /* Espacio uniforme entre columnas */
+  align-items: flex-start; /* Alinea contenido al inicio verticalmente */
+  width: 100%; /* Ancho completo */
+  /* border-top: 5px solid black; /* Línea superior opcional */
+  padding: 20px; /* Espacio interno */
+  background-color: #333;  /* Color de fondo */
+  color: white;     /* Color del texto */
+  flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+  font-family: 'Segoe UI', Arial, sans-serif;  /* Fuente del footer */
+  font-size: clamp(13px, 1.5vw, 16px); /* Tamaño de texto adaptable */
+  line-height: 1.6; /* Espaciado entre líneas */
+  text-align: left; /* Alineación del texto */
+}
+
+p.footer-text {
+  color: white; /* Color del texto */
+}
+
+.footer-column {
+  flex: 1 1 200px; /* Crece y se adapta con mínimo de 200px */
+  margin: 10px; /* Espacio externo entre columnas */
+  min-width: 200px; /* Asegura legibilidad en columnas */
+}
+
+.footer-column h4 {
+  margin-bottom: 10px; /* Espacio entre título y contenido */
+  font-size: 16px; /* Tamaño de título */
+  color: #fff; /* Color blanco para el título */
+}
+
+.footer-column a {
+  color: white; /* Enlaces blancos por defecto */
+  text-decoration: none; /* Sin subrayado inicial */
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.social-icons {
+  margin-top: 8px; /* Espacio entre texto y iconos */
+  display: flex; /* Flexbox para alinear iconos */
+  justify-content: left; /* Centra los iconos horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 15px; /* Espacio entre iconos */
+  flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+}
+
+.social-icon {
+  color: white; /* Color de los iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  text-decoration: none; /* Sin subrayado */
+  transition: transform 0.2s ease;  /* Efecto de transición al pasar el ratón */
+  display: flex; /* Flexbox para centrar iconos */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.social-icon i {
+  font-size: 24px; /* Forzamos mismo tamaño dentro del ícono */
+  margin-right: 0; /* Sin espacio, ya que no hay texto al lado */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2; /* Azul Facebook al pasar el ratón */
+}
+
+.social-icon.instagram:hover {
+  color: #e1306c; /* Rosa Instagram al pasar el ratón */
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column; /* Pila los ítems en pantallas pequeñas */
+    align-items: center; /* Centra columnas cuando están apiladas */
+    text-align: center; /* Centra el texto en móviles */
+  }
+
+  .footer-column {
+    align-items: center; /* Centra contenido en cada columna */
+    text-align: center; /* Centra texto dentro de columnas */
+  }
+
+  .social-icons {
+    justify-content: center; /* Centra los iconos en móviles */
+  }
+}

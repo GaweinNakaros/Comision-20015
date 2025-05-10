@@ -74,7 +74,7 @@ nav ul li a {
     color: black !important;  /* Asegúrate de que el color sea visible */
 }
 
-p {
+p.body-text {
     font-size: 1.2rem; /* Aumenta el tamaño del texto */
     color: black; /* Asegúrate de que el color sea visible */
 }
