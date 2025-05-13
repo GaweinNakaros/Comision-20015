@@ -9,6 +9,16 @@ html {
 
 /* Contenedores */
 
+.retenedor {                    /* Estilo para el contenedor principal */
+
+    width: 100%;                  /* Ocupa el 100% del ancho disponible */
+    max-width: 1900px;            /* Pero no más allá de 2100px en pantallas grandes */
+    margin: 0 auto;              /* Centra el contenido horizontalmente */
+    padding: 0 20px;             /* Añade espacio horizontal para que no toque los bordes */
+    box-sizing: border-box;      /* Asegura que el padding no sume al ancho total */
+    overflow-x: hidden;         /* Evita desbordes laterales */
+}
+
 .contenedor {
 
     display: flex-start;
