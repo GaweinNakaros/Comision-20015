@@ -43,7 +43,7 @@ p.footer-text {
 .social-icons {
   margin-top: 8px; /* Espacio entre texto y iconos */
   display: flex; /* Flexbox para alinear iconos */
-  justify-content: left; /* Centra los iconos horizontalmente */
+  justify-content: left; /* desplaza los iconos horizontalmente hacia la izquierda */
   align-items: center; /* Centra verticalmente */
   gap: 15px; /* Espacio entre iconos */
   flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
@@ -51,7 +51,6 @@ p.footer-text {
 
 .social-icon {
   color: white; /* Color de los iconos */
-  font-size: 24px; /* Tamaño de los iconos */
   text-decoration: none; /* Sin subrayado */
   transition: transform 0.2s ease;  /* Efecto de transición al pasar el ratón */
   display: flex; /* Flexbox para centrar iconos */
@@ -60,7 +59,7 @@ p.footer-text {
 }
 
 .social-icon i {
-  font-size: 24px; /* Forzamos mismo tamaño dentro del ícono */
+  font-size: 24px; /* Tamaño del ícono */
   margin-right: 0; /* Sin espacio, ya que no hay texto al lado */
 }
 

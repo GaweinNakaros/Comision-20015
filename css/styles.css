@@ -1,22 +1,31 @@
-
-
-
 html {
 
     font-size: 1rem;
 
 }
 
+/* Estilo para el logo */
+.imglogo {
+
+    margin: 50px;
+    border: 3px outset solid red;
+    width: 150px; /* Ancho fijo de 150px para ajustar el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+
+}
+
 /* Contenedores */
 
-.retenedor {                    /* Estilo para el contenedor principal */
+.retenedor {                        /* Estilo para el contenedor principal */
 
-    width: 100%;                  /* Ocupa el 100% del ancho disponible */
-    max-width: 1900px;            /* Pero no más allá de 2100px en pantallas grandes */
-    margin: 0 auto;              /* Centra el contenido horizontalmente */
-    padding: 0 20px;             /* Añade espacio horizontal para que no toque los bordes */
-    box-sizing: border-box;      /* Asegura que el padding no sume al ancho total */
-    overflow-x: hidden;         /* Evita desbordes laterales */
+    width: 100%;                    /* Ocupa el 100% del ancho disponible */
+    max-width: 1900px;              /* No más allá de 1900px en pantallas grandes */
+    margin-left: auto;              /* Centra el contenido horizontalmente */
+    margin-right: auto;             /* Centra el contenido horizontalmente */
+    padding-left: 20px;             /* Espacio solo a la izquierda */
+    padding-right: 20px;            /* Espacio solo a la derecha */
+    box-sizing: border-box;         /* Asegura que el padding no sume al ancho total */
+    overflow-x: hidden;             /* Quitar para pruebas de centrado */
 }
 
 .contenedor {
@@ -43,46 +52,6 @@ html {
 
 }
 
-/*
-body {
-
-    background-image: url(./img/); falta cargar imagen
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-main {
-
-    background-image: url(./img/); falta cargar imagen
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-*/
-
-.cursiva {
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-  }
-
-.imglogo {
-
-    margin: 50px;
-    border: 3px outset solid red;
-    width: 150px; /* Ancho fijo de 150px para ajustar el logo */
-    height: auto; /* Altura automática para mantener la proporción */
-
-}
-
-nav ul li a {
-    font-size: 1.2rem !important; /* Aumenta el tamaño del texto */
-    font-weight: bold !important; /* Opcional: hace el texto más grueso */
-    color: black !important;  /* Asegúrate de que el color sea visible */
-}
 
 p.body-text {
     font-size: 1.2rem; /* Aumenta el tamaño del texto */
@@ -111,18 +80,6 @@ p.body-text {
     border: 3px solid green;
 }
 
-footer {
-
-    background-color: beige;
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
-    color: black; /* Asegúrate de que el color sea visible */
-}
-
-.fa-instagram {
-
-    font-size: 150px;
-    color: red;
-}
 
 
 
