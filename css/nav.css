@@ -1,4 +1,5 @@
-nav ul {
+.menu ul {
+    grid-column: 1 / 2;         /* Controla en qué columnas se sitúa un elemento. El menú ocupa la primera columna */
     display: flex;              /* Cambiado a flex para alinear horizontalmente */
     gap: 2rem;                  /* Espacio entre los elementos */
     list-style: none;           /* Elimina los puntos de la lista */
@@ -10,7 +11,7 @@ nav ul {
     align-items: center;        /* Centra verticalmente los elementos */
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;  /* Elimina el subrayado */
     color: inherit;         /* Hereda el color del padre */
     font-family: inherit;   /* Hereda la fuente del padre */    
@@ -18,6 +19,6 @@ nav ul li a {
     transition: color 0.2s; /* Efecto de transición al pasar el ratón */
 }
 
-nav ul li a:hover {
+.menu ul li a:hover {
     color: #007bff;
 }

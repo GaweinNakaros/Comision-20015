@@ -16,42 +16,16 @@ html {
 
 /* Contenedores */
 
-.retenedor {                        /* Estilo para el contenedor principal */
-
-    width: 100%;                    /* Ocupa el 100% del ancho disponible */
-    max-width: 1900px;              /* No más allá de 1900px en pantallas grandes */
-    margin-left: auto;              /* Centra el contenido horizontalmente */
-    margin-right: auto;             /* Centra el contenido horizontalmente */
-    padding-left: 20px;             /* Espacio solo a la izquierda */
-    padding-right: 20px;            /* Espacio solo a la derecha */
-    box-sizing: border-box;         /* Asegura que el padding no sume al ancho total */
-    overflow-x: hidden;             /* Quitar para pruebas de centrado */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;       /* Cambiado a 200px para el logo */
+    grid-template-rows: auto 1fr auto;      /* Cambiado a auto para el logo */
+    gap: 10px;                              /* Espacio entre columnas */
+   
 }
-
-.contenedor {
-
-    display: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border: 5px solid black;
-    height: auto;
-    width: auto;
-
+.main {
+   grid-column: 2 / 3; /* El contenido principal ocupa la segunda columna */
 }
-
-.item {
-
-    flex: 1, 1, 200px;
-    margin: 10px;
-    background-color: beige;
-    border: 5px solid black;
-    height: auto;
-    width: auto;
-
-}
-
 
 p.body-text {
     font-size: 1.2rem; /* Aumenta el tamaño del texto */
