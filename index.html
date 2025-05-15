@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html> <!-- Tipo de documento-->
 <html lang="es"> <!-- Lenguaje del documento -->
 
@@ -32,28 +30,21 @@
 
 <body> <!-- Cuerpo que ve el usuario -->
     
-    <div class="grid-container"> <!-- Grid -->
-
-        <header class="encabezado"><!-- Encabezado -->
+    <div class="grid-container"> <!-- Grid principal -->
+        <header class="encabezado"> <!-- Encabezado -->
             <img class="imglogo" src="./img/logo.webp" alt="Logo de la tienda">
-            <h1> Mi Tienda </h1> <!-- titulo, hay del 1 al 6, cambian el tamaño -->
-            <hr> <!-- Etiqueta de linea, crea una linea de separacion -->
-
-            <nav class="menu"> <!-- Menu -->
-                <ul> <!-- Order List (ol), me crea una linea ordenada / under list (ul), me cra una lista desordenada-->
-
+            <h1> Mi Tienda </h1>
+            <hr>
+            <nav class="menu"> 
+                <ul>
                     <li> <a href="./html/productos.html">Todos los Productos</a> </li>
                     <li> <a href="./html/productos.html">Categoria 1</a> </li>
                     <li> <a href="./html/productos.html">Categoria 2</a> </li>    
-
                 </ul>    
             </nav>
         </header>
-
-        <hr> <!-- Etiqueta de linea, crea una linea de separacion -->
-
-        <!-- Banner -->
-        <div class="banner-container">
+        <hr> <!-- Línea separadora -->
+        <div class="banner-container"> 
             <div class="banner-text">
                 <h2>Bienvenido a Mi Tienda</h2>
                 <p>Encuentra los mejores productos para ti.</p>
@@ -62,16 +53,12 @@
                 <img src="./img/banner.jpg" alt="Banner de la tienda">      
             </div>
         </div>
-
-        <!-- Barra de Busqueda para productos-->
-        <div class="search-container">
+        <div class="search-container"> 
             <input type="text" placeholder="Encuentra el producto que estas buscando" class="search-input">
             <button class="search-button">Buscar</button>
         </div>    
-        
-        <hr> <!-- Etiqueta de linea, crea una linea de separacion -->
-
-        <main> <!-- Contenido principal -->
+        <hr> <!-- Línea separadora -->
+        <main class="main"> 
             <div class="card" style="width: 18rem;">
                 <img src="./img/freepik-untitled-project-20250515002715phtm.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -80,56 +67,48 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-            <p class="body-text"> Texto ejemplo... </p> <!-- parrafo, tiene concepto de palabra clave-->
+            <p class="body-text"> Texto ejemplo... </p>
             <p class="pcolor"> Texto ejemplo... </p>
             <p id="pcolor1">  Texto ejemplo... </p>
-
         </main>
-
-      <!-- Footer -->
-    
-        <footer class="footer-container">
-        <div class="footer-column">
-            <h4>Mi Tienda</h4>
-            <p class="footer-text">© 2025 Mi Tienda. Todos los derechos reservados.</p>
-            <p class="footer-text">Dirección: Calle Falsa 123, Ciudad</p>
-            <p class="footer-text">Horario: Lunes a Viernes de 9:00 a 18:00</p>
-            <p><a href="./html/ubicacion.html">Ubicacion</a></p>
-            
-        </div>
-
-        <div class="footer-column">
-            <h4>Atención al Cliente:</h4>
-            <p><a href="#">Preguntas Frecuentes</a></p>
-            <p><a href="#">Métodos de Pago</a></p>
-            <p><a href="#">Envíos y Devoluciones</a></p>
-            <p><a href="#">Sobre Nosotros</a></p>
-        </div>
-
-        <div class="footer-column">
-            <h4>Legales:</h4>
-            <p><a href="#">Política de Privacidad</a></p>
-            <p><a href="#">Términos y Condiciones</a></p>
-            <p><a href="#">Suscríbete a nuestro boletín</a></p>
-        </div>
-
-        <div class="footer-column">
-            <h4>Contacto:</h4>
-            <p><a href="./html/contacto.html">Formulario de Contacto</a></p>
-            <p class="footer-text">contacto@example.com</p>
-            <p class="footer-text">+54 11 15 1111-1111</p>
-            <p class="footer-text">Redes Sociales:</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+        <footer class="footer-container"> 
+            <div class="footer-column">
+                <h4>Mi Tienda</h4>
+                <p class="footer-text">© 2025 Mi Tienda. Todos los derechos reservados.</p>
+                <p class="footer-text">Dirección: Calle Falsa 123, Ciudad</p>
+                <p class="footer-text">Horario: Lunes a Viernes de 9:00 a 18:00</p>
+                <p><a href="./html/ubicacion.html">Ubicacion</a></p>
             </div>
-        </div>
+            <div class="footer-column">
+                <h4>Atención al Cliente:</h4>
+                <p><a href="#">Preguntas Frecuentes</a></p>
+                <p><a href="#">Métodos de Pago</a></p>
+                <p><a href="#">Envíos y Devoluciones</a></p>
+                <p><a href="#">Sobre Nosotros</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Legales:</h4>
+                <p><a href="#">Política de Privacidad</a></p>
+                <p><a href="#">Términos y Condiciones</a></p>
+                <p><a href="#">Suscríbete a nuestro boletín</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto:</h4>
+                <p><a href="./html/contacto.html">Formulario de Contacto</a></p>
+                <p class="footer-text">contacto@example.com</p>
+                <p class="footer-text">+54 11 15 1111-1111</p>
+                <p class="footer-text">Redes Sociales:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </footer>
-    </div> <!-- Cierra el div retenedor -->
+    </div> <!-- Cierra el div grid-container -->
 </body>
 
 </html>

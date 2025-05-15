@@ -1,19 +1,14 @@
+/* Solo estilos visuales y de presentación, sin grid ni display flex duplicados */
 .footer-container {
-  grid-column: 1 / 3; /* Controla en qué columnas se sitúa un elemento. El pie de página ocupa las dos columnas */
-  display: flex; /* Flexbox para alinear ítems */
-  flex-direction: row; /* Dirección de los ítems en fila */
-  justify-content: space-between; /* Espacio uniforme entre columnas */
-  align-items: flex-start; /* Alinea contenido al inicio verticalmente */
-  width: 100%; /* Ancho completo */
-  /* border-top: 5px solid black; /* Línea superior opcional */
-  padding: 20px; /* Espacio interno */
-  background-color: #333;  /* Color de fondo */
-  color: white;     /* Color del texto */
-  flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
-  font-family: 'Segoe UI', Arial, sans-serif;  /* Fuente del footer */
-  font-size: clamp(13px, 1.5vw, 16px); /* Tamaño de texto adaptable */
-  line-height: 1.6; /* Espaciado entre líneas */
-  text-align: left; /* Alineación del texto */
+    width: 100%;
+    /* border-top: 5px solid black; /* Línea superior opcional */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: clamp(13px, 1.5vw, 16px);
+    line-height: 1.6;
+    text-align: left;
 }
 
 p.footer-text {

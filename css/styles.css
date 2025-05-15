@@ -23,8 +23,41 @@ html {
     gap: 10px;                              /* Espacio entre columnas */
    
 }
+
+/* El header ocupa ambas columnas del grid principal */
+.encabezado {
+    grid-column: 1 / 3;
+}
+
+/* El banner-container ocupa ambas columnas y usa flex para su contenido interno */
+.banner-container {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* La barra de búsqueda ocupa ambas columnas y usa flex para su contenido interno */
+.search-container {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* El main ocupa solo la segunda columna */
 .main {
-   grid-column: 2 / 3; /* El contenido principal ocupa la segunda columna */
+    grid-column: 2 / 3;
+}
+
+/* Estructura/layout del footer: solo grid y flex, sin estilos visuales duplicados */
+.footer-container {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 p.body-text {

@@ -1,7 +1,6 @@
 
 .encabezado {
-    display: flex;    
-    grid-column: 1 / 3; /* La cabecera ocupa las dos columnas */                      
+    display: flex;                       
     flex-direction: row;      
     justify-content: space-between;         
     align-items: center;                    
