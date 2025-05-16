@@ -2,30 +2,22 @@
 
 ## 1. Estructura de Layout (Grid y Flex)
 - El layout principal se define en `.grid-container` (en styles.css) usando CSS Grid.
+- 1rem y 3em utilizamos para tipos de letras.
 - Los elementos principales (header, banner, barra de búsqueda, main, footer) usan `grid-column` para ubicarse en el grid.
 - Los contenedores internos como `.banner-container`, `.search-container` y `.footer-container` usan Flexbox para alinear su contenido.
 
 ## 2. Separación de Responsabilidades CSS
 - En `styles.css` solo están las propiedades de layout (grid y flex) para `.footer-container` y otros contenedores principales.
 - En `footer.css` solo están los estilos visuales del footer (color, fondo, padding, fuente, etc.).
-- No hay duplicidad de propiedades entre ambos archivos.
+- En `header.css` y `nav.css` contienen estilos específicos para el header y la navegación, sin interferir con el layout general.
+- El `checkout.css` es específico para la página de checkout y no afecta el resto del sitio.
+- Evitar duplicar propiedades entre ambos archivos. (IMPORTANTE)
 
-## 3. Otros CSS
-- `header.css` y `nav.css` contienen estilos específicos para el header y la navegación, sin interferir con el layout general.
-- `checkout.css` es específico para la página de checkout y no afecta el resto del sitio.
-
-## 4. HTML
-- Todos los archivos HTML usan las clases correctamente y no tienen estilos en línea para layout.
-- Los enlaces a los CSS son correctos y consistentes.
-
-## 5. Buenas Prácticas Aplicadas
-- Estructura y presentación están separadas.
-- No hay propiedades duplicadas entre archivos CSS.
-- El HTML está limpio y solo usa clases.
+## 3. HTML
+- En los HTML solo aplicar estructura semántica y clases, sin estilos en línea. (Preferentemente)
 
 ## Resumen
 - `styles.css`: estructura general (grid/flex, ubicación de secciones principales).
 - `footer.css`, `header.css`, `nav.css`, `checkout.css`: detalles visuales y alineación interna de cada sección.
-- HTML: solo estructura semántica y clases, sin estilos en línea.
 
-Este enfoque facilita el mantenimiento, la escalabilidad y la claridad del proyecto.
+Ideadal del enfoque: facilita el mantenimiento, la escalabilidad y la claridad del proyecto.
