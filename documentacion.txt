@@ -1,23 +1,25 @@
-# Documentación de Estructura y Funcionalidad del Proyecto
+# Documentación del Proyecto: Tienda Online
 
-## 1. Estructura de Layout (Grid y Flex)
-- El layout principal se define en `.grid-container` (en styles.css) usando CSS Grid.
-- 1rem y 3em utilizamos para tipos de letras.
-- Los elementos principales (header, banner, barra de búsqueda, main, footer) usan `grid-column` para ubicarse en el grid.
-- Los contenedores internos como `.banner-container`, `.search-container` y `.footer-container` usan Flexbox para alinear su contenido.
+## 1. Estructura General
+- El proyecto utiliza un layout principal basado en CSS Grid, definido en `.grid-container`.
+- Las secciones principales son: header, nav, main y footer, cada una ubicada mediante `grid-area`.
+- Los contenedores internos (como `.banner-container`, `.search-container`, `.footer-container`, `.product-list`) usan Flexbox para alineación y distribución.
 
-## 2. Separación de Responsabilidades CSS
-- En `styles.css` solo están las propiedades de layout (grid y flex) para `.footer-container` y otros contenedores principales.
-- En `footer.css` solo están los estilos visuales del footer (color, fondo, padding, fuente, etc.).
-- En `header.css` y `nav.css` contienen estilos específicos para el header y la navegación, sin interferir con el layout general.
-- El `checkout.css` es específico para la página de checkout y no afecta el resto del sitio.
-- Evitar duplicar propiedades entre ambos archivos. (IMPORTANTE)
+## 2. Organización y Aplicacion de styles.css
+- Contiene los estilos visuales de todas las secciones, organizados por bloques con sus respectivos titulos.
+- Los estilos están organizados por secciones: plantilla, grid, header, nav, main, banner, búsqueda, productos, video, footer.
 
 ## 3. HTML
-- En los HTML solo aplicar estructura semántica y clases, sin estilos en línea. (Preferentemente)
+- Los HTML usan clases descriptivas, sin estilos en línea.
+- Las rutas de imágenes y enlaces son relativas.
+- El nav, header y footer están unificados en todas las páginas.
+- Se utilizan media queries para responsividad en header, nav, video y footer.
 
-## Resumen
-- `styles.css`: estructura general (grid/flex, ubicación de secciones principales).
-- `footer.css`, `header.css`, `nav.css`, `checkout.css`: detalles visuales y alineación interna de cada sección.
+## 4. Secciones
+- **Header:** Incluye logo y título, alineados con Flexbox.
+- **Nav:** Menú de navegación accesible y responsivo, alineado a la izquierda en desktop y centrado en móviles.
+- **Main:** Contiene banners, barra de búsqueda, cards y/o listados de productos.
+- **Productos:** Cada producto usa la clase `.producto` y subclases para título, precio y botones.
+- **Video:** Sección `.video-productos` para mostrar uno o mas video responsivo.
+- **Footer:** Unificado, con columnas para información, atención al cliente, legales y contacto/redes.
 
-Ideadal del enfoque: facilita el mantenimiento, la escalabilidad y la claridad del proyecto.
