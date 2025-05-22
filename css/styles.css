@@ -1,91 +1,342 @@
+/* --------- PLANTILLA --------- */
 html {
-
-    font-size: 1rem;
-
+    font-size: 1rem; /* Tamaño base para rem */
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fuente principal */
+    font-size: 1rem; /* Tamaño de fuente base */
+    background: #f5f5f5; /* Color de fondo general */
+    color: #222; /* Color de texto principal */
 }
 
-/* Estilo para el logo */
-.imglogo {
-
-    margin: 50px;
-    border: 3px outset solid red;
-    width: 150px; /* Ancho fijo de 150px para ajustar el logo */
-    height: auto; /* Altura automática para mantener la proporción */
-
-}
-
-/* Contenedores */
-
+/* --------- GRID PRINCIPAL --------- */
 .grid-container {
-    display: grid;
-    grid-template-columns: 200px 1fr;       /* Cambiado a 200px para el logo */
-    grid-template-rows: auto 1fr auto;      /* Cambiado a auto para el logo */
-    gap: 10px;                              /* Espacio entre columnas */
-   
+    display: grid; /* Usamos grid para el layout principal */
+    grid-template-columns: 1fr; /* Solo una columna para layout principal */
+    grid-template-rows: auto auto 1fr auto; /* header, nav, main, footer */
+    grid-template-areas: "header" "nav" "main" "footer"; /* Definición de áreas */
+    gap: 10px; /* Espacio entre filas */
+    padding: 20px; /* separacion de los bordes para el contenedor */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+
 }
 
-/* El header ocupa ambas columnas del grid principal */
+/* --------- HEADER --------- */
+/*
+La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de navegación.
+- .encabezado: grid principal del header.
+- .logo-area: área exclusiva para el logo, alineado a la izquierda.
+- .imglogo: imagen del logo, centrada en su área.
+- h1: título de la tienda, alineado a la derecha del logo.
+*/
 .encabezado {
-    grid-column: 1 / 3;
+    grid-area: header; /* Nombre del área */
+    display: flex; /* Usamos flexbox para el layout */
+    align-items: center; /* Centrado vertical */
+    background: #007bff; /* Fondo azul */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+.logo-area {
+    justify-content: flex-start; /* Logo a la izquierda */
+}
+.imglogo {
+    /* Logo de la tienda */
+    width: 120px; /* Ancho del logo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0;
+}
+.encabezado h1 {
+    /* Título de la tienda */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: #fff; /* Texto blanco */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centrado */
+    flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+    font-weight: 700;   /* Negrita */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
-/* El banner-container ocupa ambas columnas y usa flex para su contenido interno */
+/* --------- NAV --------- */
+.menu {
+    grid-area: nav; /* Nombre del área */
+    background: #007bff; /* Fondo azul */
+    border-radius: 10px;    /* Bordes redondeados */
+    min-height: 48px;   /* Altura mínima */
+    display: flex;  /* Usamos flexbox para el layout */
+    align-items: center; /* Centrado vertical */
+    justify-content: flex-start; /* Alinea el menú a la izquierda */
+}
+.menu ul {
+    display: flex; /* Usamos flexbox para el menú */
+    flex-direction: row; /* Dirección horizontal */
+    gap: 2rem; /* Espacio entre ítems */
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    justify-content: flex-start; /* Alinea los ítems a la izquierda */
+    width: 100%; /* Ancho completo */
+}
+.menu ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fff;
+    font-weight: 700; /* Negrita */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    display: block; /* Hace que el enlace ocupe todo el espacio del li y aumenta el area clikeable de este */
+    text-align: center; /* Centrado */
+}
+.menu ul li a:hover {
+    background: black; /* Fondo al pasar el mouse */
+    outline: none; /* Sin borde de enfoque */
+}
+@media (max-width: 700px) { /*  Para pantallas pequeñas */
+    .menu ul {
+        flex-direction: column; /* Cambia a dirección vertical */
+        gap: 0.5rem;    /* Espacio entre ítems */
+        align-items: center; /* Centra los ítems */
+    }
+    .menu ul li a {     /* Estilo de los enlaces */
+        width: 90vw; /* Ancho del enlace */
+        text-align: center; /* Centrado */
+        padding: 12px 0;    /* Espaciado interno */
+    }
+}
+
+/* --------- MAIN --------- */
+.main {
+    grid-area: main; /* Nombre del área */
+}
+/* --------- BANNER --------- */
 .banner-container {
-    grid-column: 1 / 3;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/* Permite que los elementos se ajusten */
     align-items: center;
+    background: #e9ecef;
+    padding: 20px; /* Espaciado de separacion interno */
+    border-radius: 10px;
+}
+.banner-text {
+    flex: 1;
+    min-width: 200px;
+}
+.banner {
+    flex: 1; /* Ocupa el espacio restante */
+    min-width: 200px;   /* Ancho mínimo */
+    display: flex;
+    justify-content: center;
+}
+.banner img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-/* La barra de búsqueda ocupa ambas columnas y usa flex para su contenido interno */
+/* --------- BARRA DE BÚSQUEDA --------- */
 .search-container {
-    grid-column: 1 / 3;
+
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+    padding: 20px; /* Espaciado de separacion interno */
+}
+.search-input {
+    padding: 10px 20px;  /* Espaciado interno */
+    border-radius: 20px;
+    border: 1px solid #ccc;     /* Borde gris */
+    font-size: 1rem; /* Tamaño de fuente */
+    width: 500px; /* Ancho del input */
+}
+.search-button {
+    background: #007bff;
+    color: #fff;
+    border: none; /* Sin borde, queda feo */
+    border-radius: 10px;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1rem;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+.search-button:hover {
+    background: #0056b3;
+}
+.card {
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espacio entre tarjetas */
+    display: flex; /* Usamos flexbox para el layout */
+    flex-direction: column; /*  Dirección vertical */
+    align-items: center; /* Centrado */
 }
 
-/* El main ocupa solo la segunda columna */
-.main {
-    grid-column: 2 / 3;
-}
-
-/* Estructura/layout del footer: solo grid y flex, sin estilos visuales duplicados */
-.footer-container {
-    grid-column: 1 / 3;
+/* --------- PRODUCTOS --------- */
+.product-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px; /* Espaciado de separacion */
+}
+.producto {
+    background: #fff;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.producto:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+.producto img {
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 6px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+.producto .titulo {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+.producto .precio {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.producto .button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 4px 0;
+}
+.producto .button:hover {
+    background: #218838;
+}
+/* Elimino o reduzco la especificidad de .producto p para no sobrescribir .titulo y .precio */
+.producto p:not(.titulo):not(.precio) {
+    font-size: 0.98rem;
+    color: #555;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
 
-p.body-text {
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
-    color: black; /* Asegúrate de que el color sea visible */
+/* --------- VIDEO DE PRODUCTOS --------- */
+.video-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+}
+.video-productos iframe {
+    max-width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+@media (max-width: 700px) {
+    .video-productos iframe {
+        height: 200px;
+    }
 }
 
-.pcolor { /* el punto llama al atributo "class" */
-
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
-    color:blueviolet;
+/* --------- FOOTER --------- */
+.footer-container {
+    grid-area: footer; /* Nombre del área */
+    display: flex;  /* Usamos flexbox para el footer */
+    flex-direction: row; /* Dirección horizontal */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    justify-content: space-between; /* Espacio entre columnas */
+    align-items: flex-start; /* Alinea al inicio */
+    width: 100%;    /* Ancho completo */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: clamp(13px, 1.5vw, 16px);
+    line-height: 1.6;
+    text-align: left;
+    margin-top: auto; /* Espacio superior */
+    margin-bottom: 0; /* Espacio inferior */
+}
+.footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+    min-width: 200px;
+}
+.footer-column h4 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    margin-top: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.social-icon {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon i {
+    font-size: 24px;
+    margin-right: 0;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+}
+.social-icon.facebook:hover {
+    color: #1877f2;
+}
+.social-icon.instagram:hover {
+    color: #e1306c;
+}
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        align-items: center;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
 
-#pcolor1 { /* el # llama al atributo "id" */
 
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
-    color:green;
-}
-
-.recuadro p {
-
-    color: white !important;
-    font-size: 3em;
-    width: 25%;
-    height: auto;
-    background-color: black;
-    border: 3px solid green;
-}
 
 
 

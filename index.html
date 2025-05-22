@@ -19,9 +19,6 @@
 
     <!-- conectamos el index con el archivo css -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
 
 
     <title>Mi Tienda</title>
@@ -31,45 +28,42 @@
 <body> <!-- Cuerpo que ve el usuario -->
     
     <div class="grid-container"> <!-- Grid principal -->
-        <header class="encabezado"> <!-- Encabezado -->
-            <img class="imglogo" src="./img/logo.webp" alt="Logo de la tienda">
+        <header class="encabezado"> 
+            <div class="logo-area">
+                <img class="imglogo" src="./img/logo.webp" alt="Logo de la tienda">
+            </div>
             <h1> Mi Tienda </h1>
-            <hr>
-            <nav class="menu"> 
+        </header>
+        <nav class="menu"> 
                 <ul>
                     <li> <a href="./html/productos.html">Todos los Productos</a> </li>
-                    <li> <a href="./html/productos.html">Categoria 1</a> </li>
-                    <li> <a href="./html/productos.html">Categoria 2</a> </li>    
+                    <li> <a href="./html/contacto.html">Formulario de Contacto</a> </li>
+                    <li> <a href="./html/ubicacion.html">Ubicacion</a> </li>    
                 </ul>    
-            </nav>
-        </header>
-        <hr> <!-- Línea separadora -->
-        <div class="banner-container"> 
-            <div class="banner-text">
-                <h2>Bienvenido a Mi Tienda</h2>
-                <p>Encuentra los mejores productos para ti.</p>
-            </div>
-            <div class="banner">
-                <img src="./img/banner.jpg" alt="Banner de la tienda">      
-            </div>
-        </div>
-        <div class="search-container"> 
-            <input type="text" placeholder="Encuentra el producto que estas buscando" class="search-input">
-            <button class="search-button">Buscar</button>
-        </div>    
-        <hr> <!-- Línea separadora -->
+        </nav>   
+        
         <main class="main"> 
+            <div class="banner-container"> 
+                <div class="banner-text">
+                    <h2>Bienvenido a Mi Tienda</h2>
+                    <p>Encuentra los mejores productos para ti.</p>
+                </div>
+                <div class="banner">
+                    <img src="./img/banner.jpg" alt="Banner de la tienda">      
+                </div>
+            </div>
+            <div class="search-container"> 
+                <input type="text" placeholder="Encuentra el producto que estas buscando" class="search-input">
+                <button class="search-button">Buscar</button>
+            </div> 
             <div class="card" style="width: 18rem;">
                 <img src="./img/freepik-untitled-project-20250515002715phtm.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Descripcion</p>
+                    <a href="#" class="btn btn-primary">Boton</a>
                 </div>
             </div>
-            <p class="body-text"> Texto ejemplo... </p>
-            <p class="pcolor"> Texto ejemplo... </p>
-            <p id="pcolor1">  Texto ejemplo... </p>
         </main>
         <footer class="footer-container"> 
             <div class="footer-column">
