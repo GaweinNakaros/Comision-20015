@@ -88,7 +88,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     text-align: center; /* Centrado */
 }
 .menu ul li a:hover {
-    background: black; /* Fondo al pasar el mouse */
+    background: #0056b3;; /* Fondo al pasar el mouse */
     outline: none; /* Sin borde de enfoque */
 }
 @media (max-width: 700px) { /*  Para pantallas pequeñas */
@@ -252,6 +252,55 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     .video-productos iframe {
         height: 200px;
     }
+}
+
+/*---------- Formulario de contacto ---------*/
+form {
+    max-width: 600px;   /* Ancho máximo del formulario */
+    margin: auto;  /*  Centrado horizontal */
+    padding: 1.5rem; /* Espaciado interno del formulario */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espacio entre los elementos del formulario */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fuente del formulario */
+    font-size: 1rem; /* Tamaño de fuente del formulario */
+}
+
+.etiqueta {
+    font-weight: 700;   /*  Negrita */
+    margin-bottom: 0.3rem; /* Espacio enetre etiqueta e imput*/
+}
+
+input, textarea {
+    padding: 0.7rem; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+input:focus, textarea:focus { /* Reborde azul al enfocar los campos */
+    border-color: #007bff;
+    outline: none;
+}
+/* Botón de envío del formulario */
+button[type="submit"] { 
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem; /* Espaciado interno del boton envio*/
+    font-size: 1rem; /* Tamaño de fuente del boton */
+    font-weight: 700; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #0056b3;
 }
 
 /* --------- FOOTER --------- */
