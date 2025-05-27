@@ -10,7 +10,7 @@ body {
 }
 
 /* --------- GRID PRINCIPAL --------- */
-.grid-container {
+.grid-index {
     display: grid; /* Usamos grid para el layout principal */
     grid-template-columns: 1fr; /* Solo una columna para layout principal */
     grid-template-rows: auto auto 1fr auto; /* header, nav, main, footer */
@@ -27,7 +27,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
 - .encabezado: grid principal del header.
 - .logo-area: área exclusiva para el logo, alineado a la izquierda.
 - .imglogo: imagen del logo, centrada en su área.
-- h1: título de la tienda, alineado a la derecha del logo.
+-  h1: título de la tienda, alineado a la derecha del logo.
 */
 .encabezado {
     grid-area: header; /* Nombre del área */
@@ -61,12 +61,14 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
 /* --------- NAV --------- */
 .menu {
     grid-area: nav; /* Nombre del área */
+    position: sticky; /* Fija el menú en la parte superior al hacer scroll */
+    top: 0; /* Posición fija en la parte superior */
+    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
     background: #007bff; /* Fondo azul */
     border-radius: 10px;    /* Bordes redondeados */
     min-height: 48px;   /* Altura mínima */
     display: flex;  /* Usamos flexbox para el layout */
     align-items: center; /* Centrado vertical */
-    justify-content: flex-start; /* Alinea el menú a la izquierda */
 }
 .menu ul {
     display: flex; /* Usamos flexbox para el menú */
@@ -74,8 +76,8 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     gap: 2rem; /* Espacio entre ítems */
     list-style: none; /* Sin viñetas */
     padding: 0; /* Sin padding */
-    margin: 0; /* Sin margen */
-    justify-content: flex-start; /* Alinea los ítems a la izquierda */
+    margin: 0; /* sin margin */
+    justify-content: flex-end; /* acomoda el menu a la derecha */
     width: 100%; /* Ancho completo */
 }
 .menu ul li a {
@@ -91,7 +93,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     background: #0056b3;; /* Fondo al pasar el mouse */
     outline: none; /* Sin borde de enfoque */
 }
-@media (max-width: 700px) { /*  Para pantallas pequeñas */
+@media (max-width: 600px) { /*  Para pantallas pequeñas */
     .menu ul {
         flex-direction: column; /* Cambia a dirección vertical */
         gap: 0.5rem;    /* Espacio entre ítems */
@@ -248,7 +250,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .video-productos iframe {
         height: 200px;
     }
