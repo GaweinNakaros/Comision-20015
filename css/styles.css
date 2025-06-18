@@ -196,8 +196,14 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
 .producto img {
     width: 150px; /* Ancho fijo */
     height: 150px; /* Altura fija */
+    background:rgba(255255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    box-shadow:0 30px 60px rgba(0, 0, 0, 0.4); /* Sombreado*/
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transform-style:preserve-3d; /* Mantiene el efecto 3D */;
+    transition: transform 0.3s ease; /* Transición suave */
     object-fit: cover; /* Mantiene la proporción de la imagen */
-    border-radius: 6px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
     margin-bottom: 10px; /* Espacio inferior */
 }
 .producto .titulo {
@@ -227,7 +233,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
 .producto .button:hover {
     background: #218838;
 }
-/* Elimino o reduzco la especificidad de .producto p para no sobrescribir .titulo y .precio */
+/* Elimino la especificidad de .producto p para no sobrescribir .titulo y .precio */
 .producto p:not(.titulo):not(.precio) {
     font-size: 0.98rem;
     color: #555;

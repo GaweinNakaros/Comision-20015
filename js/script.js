@@ -1,3 +1,6 @@
+
+
+/*
 console.log("hola mundo");
 
 
@@ -78,3 +81,7 @@ document.writeln("Número de socio: " + nuemerodesocio);
 // || es el operador lógico OR, que verifica si al menos una de las dos condiciones es verdadera
 // ! es el operador lógico NOT, que invierte el valor de una condición
 // por ejemplo, !(1 < 2) es false, ya que 1 < 2 es true, y el operador NOT invierte el valor a false
+
+*/
+
+
