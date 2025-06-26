@@ -1,0 +1,33 @@
+.tema-oscuro {
+    background-color: #121212;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+#carrito {
+    margin-top: 20px;
+}
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+#lista-carrito li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#vaciar-carrito {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none; 
+
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#vaciar-carrito:hover {
+    background-color: darkred;
+}
