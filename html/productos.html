@@ -14,7 +14,7 @@
     <title>Productos</title>
 </head>
 <body>
-    <div class="grid-index">
+    <div class="grid-productos">
         <header class="encabezado"> 
             <div class="logo-area">
                 <img class="imglogo" src="../img/logo.webp" alt="Logo de la tienda">
@@ -31,27 +31,8 @@
         <main class="main">
             <section>
                 <div class="product-list">
-                    <div class="producto">
-                        <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-44bbe7f76ce2f6abdb17334260165605-1024-1024.webp" width="20%">
-                        <p class ="titulo">Nombre</p>
-                        <p class ="precio">$500</p>
-                        <button class ="button">Agregar al carrito</button>
-                        <button class ="button">Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="https://acdn-us.mitiendanube.com/stores/105/855/products/diseno-sin-titulo-zip-2-3dd37d5aab0719980517426049538851-1024-1024.webp" width="20%">
-                        <p class ="titulo">Nombre</p>
-                        <p class ="precio">$500</p>
-                        <button class ="button">Agregar al carrito</button>
-                        <button class ="button">Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="../img/cuelga_escoba.webp" width="20%"> <!-- Ruta absoluta -->
-                        <p class ="titulo">Nombre</p>
-                        <p class ="precio">$500</p>
-                        <button class ="button">Agregar al carrito</button>
-                        <button class ="button">Comprar</button>
-                    </div>        
+                    <h2>Lista de Productos</h2>
+                    <div class="row" id="product-list"></div>       
                 </div>
             </section>
             <!-- Video de productos -->
@@ -60,6 +41,15 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de productos" frameborder="0" allowfullscreen></iframe>
             </section>
         </main>
+        <!-- Carrito lateral -->
+        <aside class="carrito-lateral" id="carrito-lateral">
+            <h3>Mi Carrito</h3>
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <span>Total: $<span id="carrito-total">0</span></span>
+            </div>
+            <button id="finalizar-compra" class="btn btn-primary w-100 mt-2">Finalizar compra</button>
+        </aside>
         <footer class="footer-container"> 
             <div class="footer-column">
                 <h4>Mi Tienda</h4>
@@ -98,6 +88,8 @@
             </div>
         </footer>
     </div>
+    <script src="../js/product_list.js"></script>
+    <script src="../js/carrito.js"></script>    
 </body>
-<script src="../js/producto_3d.js"></script> <!-- Conectamos producto.html con el archivo js -->
+
 </html>
