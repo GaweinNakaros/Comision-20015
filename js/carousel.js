@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const carouselInner = document.querySelector('.carousel-inner'); //busca el contenedor del carrusel
-    let cantidad = 10; // Variable para definir la cantidad de productos a mostrar
     if (!carouselInner) return; //si no existe el contenedor, no hace nada
 
     try {
 
-        const res = await fetch('https://fakestoreapi.com/products?limit=cantidad'); 
-        // llamo a la API de productos, limitando la cantidad mediantre la variable cantidad
+        const res = await fetch('https://fakestoreapi.com/products?limit=15'); 
+        // llamo a la API de productos, limitando la cantidad a 15 para no sobrecargar el carrusel
         const productos = await res.json(); //convertimos la respuesta a JSON
 
         // Limpia los items existentes, esto es para evitar duplicados si se recarga la página

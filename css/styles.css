@@ -21,6 +21,20 @@ body {
 
 }
 
+/* --------- GRID Productos --------- */
+.grid-productos {
+    display: grid;
+    grid-template-columns: 1fr 400px; /* Columna principal y columna carrito */
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main carrito"
+        "footer footer";
+    gap: 10px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
 /* --------- HEADER --------- */
 /*
 La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de navegación.
@@ -59,16 +73,18 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
 }
 
 /* --------- NAV --------- */
+
 .menu {
     grid-area: nav; /* Nombre del área */
     position: sticky; /* Fija el menú en la parte superior al hacer scroll */
-    top: 0; /* Posición fija en la parte superior */
+    top: 1px; /* Posición fija en la parte superior */
     z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
     background: #007bff; /* Fondo azul */
     border-radius: 10px;    /* Bordes redondeados */
     min-height: 48px;   /* Altura mínima */
     display: flex;  /* Usamos flexbox para el layout */
     align-items: center; /* Centrado vertical */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Sombra para destacar */
 }
 .menu ul {
     display: flex; /* Usamos flexbox para el menú */
@@ -195,16 +211,17 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     box-shadow: 0 4px 16px rgba(0,0,0,0.13);
 }
 .producto img {
-    width: 150px; /* Ancho fijo */
-    height: 150px; /* Altura fija */
-    background:rgba(255255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor*/
+    max-width: 150%; /* Ancho máximo, nunca supera los 150px de ancho */
+    height: auto; /* mantenemos la proporcion original de la imagen*/
+    max-height: 150px; /* Altura máxima de la imagen */
+    background:rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
     box-shadow:0 30px 60px rgba(0, 0, 0, 0.4); /* Sombreado*/
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     overflow: hidden; /* Oculta el desbordamiento */
-    transform-style:preserve-3d; /* Mantiene el efecto 3D */;
     transition: transform 0.3s ease; /* Transición suave */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-    border-radius: 20px; /* Bordes redondeados */
+    object-fit: contain; /* Muestra la imagen completa*/
+    border-radius: 10px; /* Bordes redondeados */
     margin-bottom: 10px; /* Espacio inferior */
 }
 .producto .titulo {
@@ -220,6 +237,7 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     font-size: 1.1rem;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: auto;      /* Empuja el precio hacia el fondo, justo encima del botón */
 }
 .producto .button {
     background: #28a745;
@@ -230,6 +248,8 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     font-size: 1rem;
     cursor: pointer;
     margin: 4px 0;
+    margin-bottom: 10px;   /* Espacio respecto al borde inferior */
+    display: block;        /* Opcional: para que ocupe todo el ancho disponible */
 }
 .producto .button:hover {
     background: #218838;
@@ -240,6 +260,76 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     color: #555;
     margin: 0 0 10px 0;
     text-align: center;
+}
+/* --------- Carrito Lateral --------- */
+.carrito-lateral {
+    grid-area: carrito;
+    position: sticky;
+    top: 60px;
+    height: auto;
+    min-height: 400px;
+    max-height: 90vh;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+    padding: 24px 16px 16px 16px;
+    z-index: 1000; /* Asegura que el carrito esté por encima de otros elementos */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;  /* Espacio entre los elementos del carrito */
+}
+.carrito-lateral h3 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.carrito-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.carrito-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8f8f8;
+}
+.carrito-item .titulo {
+    flex: 1;
+    font-size: 1rem;
+}
+.carrito-item .precio {
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 8px;
+}
+.carrito-item .acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.carrito-item .acciones span {
+    background: #111;        /* Fondo negro */
+    color: #fff;             /* Texto blanco */
+    border-radius: 8px;      /* Bordes redondeados */
+    padding: 2px 10px;       /* Espaciado interno */
+    font-weight: bold;
+    margin: 2px 0;           /* Espacio arriba y abajo */
+    text-align: center;
+    display: inline-block; 
+}
+.carrito-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 16px;
+}
+#finalizar-compra {
+    margin-top: 12px;
 }
 
 /* --------- VIDEO DE PRODUCTOS --------- */

@@ -3,36 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/carrito_tienda.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Resumen de Compra</title>
 </head>
 <body>
+    <div class="grid-index">
+        <!-- Header -->
+        <header class="encabezado">
+            <div class="logo-area">
+                <img src="../img/logo.webp" alt="Logo" class="imglogo">
+            </div>
+            <h1>Mi Tienda</h1>
+        </header>
 
-    <h1>Resumen de la compra</h1>
-    <main>
-        <section>
-            <div id="detalle"></div>
-        </section>
-    </main>
+        <!-- Nav -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/productos.html">Productos</a></li>
+                <li><a href="../html/ubicacion.html">Ubicacion</a></li>
+            </ul>
+        </nav>
 
-    <footer></footer>
+        <!-- Main -->
+        <main class="main">
+            <h2>Resumen de la compra</h2>
+            <section>
+                <div id="detalle"></div>
+            </section>
+            <form id="formulario" action="https://formspree.io/f/mrbqkago" method="post">
+                <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+                <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+                <br>
+                <hr>
+                <label>Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <label>Email:</label>
+                <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
+                <label>Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                <br><br>
+                <button type="submit" id="botonEnviar">Confirmar Compra</button>
+            </form>
+        </main>
 
-    <form id="formulario" action="acá pega tu dirección de FORMSPREE" method="POST">
-        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
-        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
-        <br>
-        <hr>
-        <label>Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-        <label>Email:</label>
-        <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
-        <label>Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-        <br><br>
-        <button type="submit" id="botonEnviar">Confirmar Compra</button>
-    </form>
-
+        <!-- Footer -->
+    
+        <footer class="footer-container"> 
+            <div class="footer-column">
+                <h4>Mi Tienda</h4>
+                <p class="footer-text">© 2025 Mi Tienda. Todos los derechos reservados.</p>
+                <p class="footer-text">Dirección: Calle Falsa 123, Ciudad</p>
+                <p class="footer-text">Horario: Lunes a Viernes de 9:00 a 18:00</p>
+                <p><a href="../html/ubicacion.html">Ubicacion</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Atención al Cliente:</h4>
+                <p><a href="#">Preguntas Frecuentes</a></p>
+                <p><a href="#">Métodos de Pago</a></p>
+                <p><a href="#">Envíos y Devoluciones</a></p>
+                <p><a href="#">Sobre Nosotros</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Legales:</h4>
+                <p><a href="#">Política de Privacidad</a></p>
+                <p><a href="#">Términos y Condiciones</a></p>
+                <p><a href="#">Suscríbete a nuestro boletín</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto:</h4>
+                <p><a href="../html/contacto.html">Formulario de Contacto</a></p>
+                <p class="footer-text">contacto@example.com</p>
+                <p class="footer-text">+54 11 15 1111-1111</p>
+                <p class="footer-text">Redes Sociales:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="../js/compra.js"></script>
-
 </body>
 </html>
