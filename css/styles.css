@@ -130,7 +130,8 @@ La cabecera utiliza CSS Grid para organizar el logo, el título y el menú de na
     justify-content: center;
 }
 .banner img {
-    max-width: 100%;
+    height: 200px; /*Altura */
+    width: auto; /* Ancho */
     border-radius: 10px;
 }
 

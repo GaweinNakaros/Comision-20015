@@ -25,16 +25,21 @@ items.addEventListener('click', e=>{
 	btnAccion(e)
 })
 
-const fetchData = async()=>{
-	try{
-		const res = await fetch('../js/productos.json') 
-		const data = await res.json()
-		pintarCard(data)
-
-	}catch(error){
-		console.log(error)
-	}
-}
+const fetchData = async () => {                // Declaramos la funcion fetchData como una función asíncrona para manejar la petición a la API.
+    try {                                      // Inicio un bloque try para manejar errores.
+        const res = await fetch('https://fakestoreapi.com/products'); // creamos petición HTTP a la API de FakeStore y espera la respuesta.
+        const data = await res.json();          	// Convierte la respuesta a formato JSON y la guarda en 'data'.
+        const datos_productos = data.map(item => ({ // Usa map para transformar cada producto recibido en un nuevo objeto con los campos que necesitamos usar.
+            id: item.id,                        // Toma el id del producto original.
+            title: item.title,                  // Toma el título del producto original.
+            precio: item.price,                 // Toma el precio del producto original.
+            thumbnailUrl: item.image            // Toma la URL de la imagen del producto original.
+        }));
+        pintarCard(datos_productos);            // Llama a la función pintarCard para mostrar los productos.
+    } catch (error) {                           // Uso la funcion catch para manejar cualquier error que ocurra durante la petición.
+		console.error('Error al obtener los productos:', error); // Muestra un mensaje de error en la consola si ocurre un error.
+    }
+};
 
 const pintarCard = data=>{
 	data.forEach(item => {
