@@ -1,6 +1,13 @@
-# 🛍️ E-commerce Tienda Web
+# 🎓 Proyecto Final - E-commerce Tienda Web
+**Curso:** Talento Tech 2025 - Frontend Development  
+**Comisión:** 20015
 
-> **Aplicación web completa de comercio electrónico** desarrollada con HTML5, CSS3, JavaScript y APIs REST. Incluye carrito de compras, gestión de productos, formularios de contacto y diseño responsive.
+> **Aplicación web de comercio electrónico** desarrollada como proyecto final del curso. Incluye carrito de compras, gestión de productos, formularios de contacto y diseño responsive.
+
+---
+**📌 NOTA IMPORTANTE:** Este es el repositorio académico del curso. Para la versión profesional optimizada del proyecto, visita: [ecommerce-tienda-web](https://github.com/GaweinNakaros/ecommerce-tienda-web)
+
+---
 
 [![Demo Live](https://img.shields.io/badge/Demo-Live-brightgreen)](link-al-demo)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
