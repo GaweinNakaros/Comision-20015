@@ -1,6 +1,8 @@
-# 📸 Guía para Screenshots del Proyecto
+# 📸 Guía de Screenshots - Comision-20015
 
-## 🎯 Screenshots Necesarios para README
+> **🏠 README Principal:** [`../../readme.md`](../../readme.md) | **🛠️ Setup:** [`../../.vscode/SETUP-GUIDE.md`](../../.vscode/SETUP-GUIDE.md)
+
+## 🎯 Screenshots Requeridos
 
 ### 1. **Homepage (homepage.png)**
 - Captura de la página principal (`index.html`)
@@ -62,19 +64,19 @@
 - ❌ Interfaces rotas o incompletas
 - ❌ Calidad baja o pixelada
 
-## 📝 Lista de Verificación
+## ✅ Lista de Verificación Rápida
 
 ### Antes de Capturar:
-- [ ] Cargar la página completamente
-- [ ] Verificar que todos los elementos funcionen
-- [ ] Limpiar cache del navegador
-- [ ] Usar datos de ejemplo atractivos
+- [ ] ✅ Página completamente cargada
+- [ ] 🛒 Carrito con productos de ejemplo  
+- [ ] 📱 Probar vista responsive
+- [ ] 🧹 Cache del navegador limpio
 
 ### Después de Capturar:
-- [ ] Verificar calidad de imagen
-- [ ] Comprimir si es necesario
-- [ ] Nombrar archivos correctamente
-- [ ] Actualizar paths en README.md
+- [ ] 🔍 Verificar calidad de imagen
+- [ ] 📦 Comprimir si es necesario (max 2MB)
+- [ ] 📝 Nombres correctos (`homepage.png`, `products.png`, etc.)
+- [ ] 🔗 Actualizar links en [`../../readme.md`](../../readme.md)
 
 ---
-**Nota:** Estas screenshots serán la primera impresión de tu proyecto para reclutadores y clientes potenciales.
+💡 **Tip:** Estas screenshots son tu carta de presentación profesional.

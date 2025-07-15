@@ -31,7 +31,9 @@ Este proyecto forma parte del curso de desarrollo web y tiene como objetivos:
 - Implementar buenas prácticas de desarrollo
 - Crear un portfolio de aprendizaje
 
-### Capturas de Pantalla
+### 📸 Capturas de Pantalla
+
+> **📋 Guía completa:** [`docs/screenshots/SCREENSHOT-GUIDE.md`](./docs/screenshots/SCREENSHOT-GUIDE.md)
 
 <div align="center">
   <img src="./docs/screenshots/homepage.png" alt="Página Principal" width="45%">
@@ -100,12 +102,13 @@ Comision-20015/
 │   └── banner.jpg          # Banner principal
 ├── 📁 docs/
 │   └── screenshots/        # Capturas de pantalla
+│       └── SCREENSHOT-GUIDE.md # Guía para screenshots
 ├── 📁 .vscode/
 │   ├── methodology.md      # Metodología de desarrollo
 │   ├── copilot-context.md  # Configuración AI
 │   ├── git-conventions.md  # Convenciones de Git
 │   ├── quick-setup.md      # Configuración rápida
-│   └── README.md           # Índice de documentación
+│   └── SETUP-GUIDE.md      # Guía de configuración
 ├── index.html              # Página principal
 ├── documentacion.txt       # Documentación del proyecto
 └── README.md               # Este archivo
@@ -134,31 +137,22 @@ Comision-20015/
 - [ ] Sistema de reviews/calificaciones
 - [ ] Chat en tiempo real
 
-## 🔧 Desarrollo Académico
+## 🔧 Desarrollo y Configuración
 
-### Metodología de Trabajo
-Este proyecto sigue la metodología documentada en `.vscode/methodology.md`:
-1. **Análisis** - Entender el requerimiento
-2. **Explicación** - Comprender la solución
-3. **Propuesta** - Evaluar alternativas
-4. **Autorización** - Confirmar implementación
-5. **Desarrollo** - Código comentado para aprendizaje
-6. **Validación** - Verificar funcionamiento
-7. **Documentación** - Actualizar registros
+> **🛠️ Guía de Setup:** [`.vscode/SETUP-GUIDE.md`](./.vscode/SETUP-GUIDE.md)
 
-### Configuración del Entorno
-1. Usar VS Code con extensiones recomendadas (ver `.vscode/extensions.json`)
-2. Seguir convenciones de Git documentadas
-3. Activar modo mentor de Copilot para aprendizaje guiado
+### Configuración Rápida del Entorno
+### 🔄 Metodología de Trabajo
+Este proyecto sigue una metodología académica estructurada (detalles en [`.vscode/methodology.md`](./.vscode/methodology.md)):
+1. **Análisis** → **Explicación** → **Propuesta** → **Autorización** → **Desarrollo** → **Validación** → **Documentación**
 
-### Comandos Útiles
+### 🚀 Configuración VS Code
 ```bash
-# Activar contexto de aprendizaje en Copilot
+# Para activar el contexto completo del proyecto:
 @workspace Activar modo mentor académico para Comision-20015
-
-# Ver documentación completa
-code .vscode/README.md
 ```
+
+📋 **Configuración completa:** Ver [`.vscode/SETUP-GUIDE.md`](./.vscode/SETUP-GUIDE.md)
 
 ## 📚 Proceso de Aprendizaje
 

@@ -1,31 +1,30 @@
-# 📚 Índice de Documentación - Comision-20015
+# �️ Guía de Configuración - Comision-20015
 
-## 🎓 Proyecto Académico - Desarrollo Web E-commerce
+> **🏠 README Principal:** [`../readme.md`](../readme.md) | **📸 Screenshots:** [`../docs/screenshots/SCREENSHOT-GUIDE.md`](../docs/screenshots/SCREENSHOT-GUIDE.md)📚 Documentación Técnica - Comision-20015
 
-### **📋 Archivos de Configuración (.vscode/)**
+> **� README Principal:** [`../readme.md`](../readme.md) | **📸 Screenshots:** [`../docs/screenshots/README.md`](../docs/screenshots/README.md)
 
-#### **🔧 Configuración Principal**
-1. **methodology.md** - Metodología de desarrollo sostenible
-   - Proceso de 7 pasos para desarrollo colaborativo
-   - Estándares de comentarios y documentación
-   - Buenas prácticas de Git y versionado
+## 🎓 Configuración del Proyecto Académico
 
-2. **copilot-context.md** - Configuración de asistencia AI
-   - Contexto detallado para GitHub Copilot
-   - Modo mentor activado
-   - Instrucciones específicas del proyecto
+### **� Documentos de Configuración**
 
-3. **git-conventions.md** - Convenciones de Git
-   - Estructura de branches para el curso
-   - Naming conventions académicas
-   - Flujo de trabajo Git específico
+| Archivo | Propósito | Uso |
+|---------|-----------|-----|
+| [`methodology.md`](methodology.md) | 🔄 Metodología de desarrollo | Proceso paso a paso |
+| [`copilot-context.md`](copilot-context.md) | 🤖 Configuración AI | Contexto para Copilot |
+| [`git-conventions.md`](git-conventions.md) | 📝 Convenciones Git | Branches y commits |
+| [`quick-setup.md`](quick-setup.md) | ⚡ Setup rápido | Comandos inmediatos |
 
-4. **quick-setup.md** - Configuración rápida
-   - Comandos de activación inmediata
-   - Setup para nuevas sesiones
-   - Configuración VS Code
+### **⚡ Inicio Rápido**
 
-#### **📁 Estructura del Proyecto**
+```bash
+# Activar contexto completo del proyecto
+@workspace Activar modo mentor académico para Comision-20015. Seguir copilot-context.md y methodology.md
+
+# Próximo objetivo: Sistema de búsqueda en la tienda
+```
+
+### **� Estructura de Archivos**
 ```
 Comision-20015/
 ├── index.html                 # Página principal
