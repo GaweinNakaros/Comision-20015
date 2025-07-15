@@ -19,6 +19,29 @@
         "files.autoSaveDelay": 1000,
         "emmet.includeLanguages": {
             "javascript": "javascriptreact"
+        },
+        // Configuración de GitHub Copilot
+        "github.copilot.enable": {
+            "*": true,
+            "yaml": true,
+            "plaintext": true,
+            "markdown": true
+        },
+        "github.copilot.chat.defaultContext": ".vscode/copilot-context.md",
+        // Configuración de desarrollo
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "files.associations": {
+            "*.md": "markdown"
+        },
+        // Configuración específica del proyecto
+        "workbench.startupEditor": "readme",
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+            "*.html": "${capture}.css, ${capture}.js",
+            "package.json": "package-lock.json, .gitignore"
         }
     },
     "extensions": {
