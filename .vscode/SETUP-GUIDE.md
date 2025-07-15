@@ -1,12 +1,10 @@
-# �️ Guía de Configuración - Comision-20015
+# 🛠️ Guía de Configuración - Comision-20015
 
-> **🏠 README Principal:** [`../readme.md`](../readme.md) | **📸 Screenshots:** [`../docs/screenshots/SCREENSHOT-GUIDE.md`](../docs/screenshots/SCREENSHOT-GUIDE.md)📚 Documentación Técnica - Comision-20015
-
-> **� README Principal:** [`../readme.md`](../readme.md) | **📸 Screenshots:** [`../docs/screenshots/README.md`](../docs/screenshots/README.md)
+> **🏠 README Principal:** [`../readme.md`](../readme.md) | **📸 Screenshots:** [`../docs/screenshots/SCREENSHOT-GUIDE.md`](../docs/screenshots/SCREENSHOT-GUIDE.md)
 
 ## 🎓 Configuración del Proyecto Académico
 
-### **� Documentos de Configuración**
+### **📋 Documentos de Configuración**
 
 | Archivo | Propósito | Uso |
 |---------|-----------|-----|
@@ -24,7 +22,7 @@
 # Próximo objetivo: Sistema de búsqueda en la tienda
 ```
 
-### **� Estructura de Archivos**
+### **📂 Estructura de Archivos Actualizada**
 ```
 Comision-20015/
 ├── index.html                 # Página principal
@@ -43,7 +41,16 @@ Comision-20015/
 │   ├── carousel.js         # Carrusel de imágenes
 │   └── vista_3d.js         # Funcionalidad 3D (futura)
 ├── img/                    # Recursos de imágenes
+├── docs/
+│   └── screenshots/        # Capturas de pantalla
+│       └── SCREENSHOT-GUIDE.md # Guía para screenshots  
 ├── .vscode/                # Configuración VS Code
+│   ├── SETUP-GUIDE.md     # Esta guía de configuración
+│   ├── methodology.md      # Metodología de desarrollo
+│   ├── copilot-context.md  # Configuración AI
+│   ├── git-conventions.md  # Convenciones Git
+│   └── quick-setup.md      # Configuración rápida
+├── readme.md               # README principal del proyecto
 └── documentacion.txt       # Documentación del proyecto
 ```
 
@@ -109,6 +116,6 @@ Comision-20015/
 
 ---
 
-**📅 Última actualización:** 14 de julio de 2025  
+**📅 Última actualización:** 15 de julio de 2025  
 **👤 Curso:** Comision-20015 - Desarrollo Web  
 **🎯 Estado:** Listo para continuar desarrollo

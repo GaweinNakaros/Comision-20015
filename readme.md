@@ -24,7 +24,7 @@
 
 ## 🚀 Proyecto Académico en Desarrollo
 
-### � Objetivos del Curso
+### 🎓 Objetivos del Curso
 Este proyecto forma parte del curso de desarrollo web y tiene como objetivos:
 - Aplicar conocimientos de HTML5, CSS3 y JavaScript
 - Desarrollar una aplicación web completa
@@ -111,7 +111,7 @@ Comision-20015/
 │   └── SETUP-GUIDE.md      # Guía de configuración
 ├── index.html              # Página principal
 ├── documentacion.txt       # Documentación del proyecto
-└── README.md               # Este archivo
+└── readme.md               # Este archivo
 ```
 
 ## 🎯 Funcionalidades Implementadas
