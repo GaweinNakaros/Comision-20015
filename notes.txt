@@ -1,0 +1,66 @@
+# GESTIÓN DE TAGS - PROYECTO ACADÉMICO COMISIÓN 20015
+# Fecha de creación: 14 de julio de 2025
+# Estado actual: v1.0.0-academico (Base limpia académica)
+
+## 🏷️ TAGS SUGERIDOS PARA EL FUTURO
+
+### Funcionalidades Principales:
+- v1.1.0-busqueda      # Sistema de búsqueda de productos implementado
+- v1.2.0-carrito       # Carrito de compras funcional con localStorage
+- v1.3.0-responsive    # Diseño responsive completo (mobile-first)
+- v1.4.0-forms         # Formularios de contacto y compra validados
+
+### Características Avanzadas:
+- v1.5.0-api           # Integración con APIs externas (si aplica)
+- v1.6.0-auth          # Sistema de autenticación básico (si requerido)
+- v1.7.0-performance   # Optimizaciones de rendimiento y SEO
+- v1.8.0-accessibility # Mejoras de accesibilidad web
+
+### Entregas Académicas:
+- v2.0.0-pre-entrega   # Versión previa a entrega final
+- v2.0.0-final         # Entrega final del proyecto académico
+
+## 📚 TAGS ACTUALES Y SU PROPÓSITO
+
+### MANTENER (Protegidos):
+✅ entrega-academica    # INAMOVIBLE - Entrega académica oficial
+✅ v1.0.0-academico     # Base limpia actual - Punto de partida estable
+
+### REVISAR PARA ELIMINACIÓN:
+🔍 backup-pre-cleanup   # Respaldo antes de limpieza - PUEDE ELIMINARSE
+🔍 pre-migration-v0.3.0 # Antes de migración - PUEDE ELIMINARSE  
+🔍 v0.2.0              # Versión antigua - PUEDE ELIMINARSE
+
+## 🎯 ESTRATEGIA DE BRANCHING SUGERIDA
+
+### Ramas de Trabajo:
+- Ampliacion_Web       # Base académica estable (ACTUAL)
+- feature/busqueda     # Desarrollo sistema búsqueda
+- feature/carrito      # Desarrollo carrito compras
+- feature/responsive   # Mejoras responsive
+- hotfix/*            # Correcciones urgentes
+
+### Ramas Protegidas:
+- main                # Rama principal del repositorio
+- Proyecto_Final      # Entrega final académica (PROTEGIDA)
+
+## 📝 NOTAS DE DESARROLLO
+
+1. Crear nueva rama desde v1.0.0-academico para cada funcionalidad
+2. Merge a Ampliacion_Web cuando la característica esté completa
+3. Tag cada milestone importante para facilitar navegación
+4. Mantener commits en español con formato descriptivo
+5. Documentar cambios significativos en este archivo
+
+## 🚀 PRÓXIMOS PASOS RECOMENDADOS
+
+1. Eliminar tags obsoletos identificados
+2. Crear rama feature/busqueda desde v1.0.0-academico
+3. Implementar sistema de búsqueda básico
+4. Tag v1.1.0-busqueda al completar funcionalidad
+5. Continuar con carrito de compras
+
+---
+# Última actualización: 14/07/2025
+# Estado: Base académica limpia establecida
+# Próximo objetivo: Sistema de búsqueda de productos
