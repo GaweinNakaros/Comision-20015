@@ -1,19 +1,17 @@
-# 🎓 Proyecto Final - E-commerce Tienda Web
-**Curso:** Talento Tech 2025 - Frontend Development  
-**Comisión:** 20015
+# 🎓 Proyecto Académico - E-commerce Tienda Web
+**Curso:** Desarrollo Web - Comisión 20015  
+**Institución:** Talento Tech 2025  
+**Estudiante:** Matías
 
-> **Aplicación web de comercio electrónico** desarrollada como proyecto final del curso. Incluye carrito de compras, gestión de productos, formularios de contacto y diseño responsive.
-
----
-**📌 NOTA IMPORTANTE:** Este es el repositorio académico del curso. Para la versión profesional optimizada del proyecto, visita: [ecommerce-tienda-web](https://github.com/GaweinNakaros/ecommerce-tienda-web)
+> **Aplicación web de comercio electrónico** desarrollada como proyecto académico del curso. Incluye carrito de compras, gestión de productos, formularios de contacto y diseño responsive.
 
 ---
 
-[![Demo Live](https://img.shields.io/badge/Demo-Live-brightgreen)](link-al-demo)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Academic](https://img.shields.io/badge/Proyecto-Académico-blue)](https://github.com/GaweinNakaros/Comision-20015)
 
 ## 🎯 Características Principales
 
@@ -24,9 +22,14 @@
 - **💾 Persistencia de Datos:** LocalStorage para mantener el carrito entre sesiones
 - **🎨 Interfaz Moderna:** CSS Grid, Flexbox y animaciones CSS
 
-## 🚀 Demo en Vivo
+## 🚀 Proyecto Académico en Desarrollo
 
-🔗 **[Ver Aplicación en Vivo](link-al-deployment)**
+### � Objetivos del Curso
+Este proyecto forma parte del curso de desarrollo web y tiene como objetivos:
+- Aplicar conocimientos de HTML5, CSS3 y JavaScript
+- Desarrollar una aplicación web completa
+- Implementar buenas prácticas de desarrollo
+- Crear un portfolio de aprendizaje
 
 ### Capturas de Pantalla
 
@@ -49,36 +52,36 @@
 - **Formspree** - Gestión de formularios
 - **LocalStorage** - Persistencia local
 
-## 📦 Instalación y Configuración
+## 📦 Configuración del Proyecto Académico
 
 ### Prerrequisitos
 - Navegador web moderno
-- Servidor local (opcional, para desarrollo)
+- VS Code (recomendado)
+- Live Server extension
 
-### Instalación
+### Configuración para Desarrollo
 
-1. **Clonar el repositorio:**
+1. **Clonar el repositorio académico:**
    ```bash
-   git clone https://github.com/tu-usuario/ecommerce-tienda-web.git
-   cd ecommerce-tienda-web
+   git clone https://github.com/GaweinNakaros/Comision-20015.git
+   cd Comision-20015
    ```
 
-2. **Abrir con Live Server (VS Code):**
+2. **Abrir en VS Code:**
+   ```bash
+   code .
+   ```
+
+3. **Usar Live Server:**
    ```bash
    # Instalar Live Server extension en VS Code
    # Click derecho en index.html > "Open with Live Server"
    ```
 
-3. **O abrir directamente:**
-   ```bash
-   # Abrir index.html en tu navegador
-   open index.html
-   ```
-
-## 🏗️ Estructura del Proyecto
+## 🏗️ Estructura del Proyecto Académico
 
 ```
-ecommerce-tienda-web/
+Comision-20015/
 ├── 📁 css/
 │   └── styles.css          # Estilos principales
 ├── 📁 html/
@@ -91,7 +94,7 @@ ecommerce-tienda-web/
 │   ├── carrito.js          # Lógica del carrito
 │   ├── product_list.js     # Lista de productos
 │   ├── compra.js           # Proceso de compra
-│   └── vista_3d.js         # Efectos 3D
+│   └── vista_3d.js         # Efectos 3D (futuro)
 ├── 📁 img/
 │   ├── logo.webp           # Logo de la tienda
 │   └── banner.jpg          # Banner principal
@@ -99,8 +102,12 @@ ecommerce-tienda-web/
 │   └── screenshots/        # Capturas de pantalla
 ├── 📁 .vscode/
 │   ├── methodology.md      # Metodología de desarrollo
-│   └── git-conventions.md  # Convenciones de Git
+│   ├── copilot-context.md  # Configuración AI
+│   ├── git-conventions.md  # Convenciones de Git
+│   ├── quick-setup.md      # Configuración rápida
+│   └── README.md           # Índice de documentación
 ├── index.html              # Página principal
+├── documentacion.txt       # Documentación del proyecto
 └── README.md               # Este archivo
 ```
 
@@ -127,70 +134,89 @@ ecommerce-tienda-web/
 - [ ] Sistema de reviews/calificaciones
 - [ ] Chat en tiempo real
 
-## 🔧 Desarrollo
+## 🔧 Desarrollo Académico
 
-### Scripts de Desarrollo
-```bash
-# Iniciar servidor de desarrollo
-npm run dev
-
-# Ejecutar tests
-npm run test
-
-# Build para producción
-npm run build
-```
+### Metodología de Trabajo
+Este proyecto sigue la metodología documentada en `.vscode/methodology.md`:
+1. **Análisis** - Entender el requerimiento
+2. **Explicación** - Comprender la solución
+3. **Propuesta** - Evaluar alternativas
+4. **Autorización** - Confirmar implementación
+5. **Desarrollo** - Código comentado para aprendizaje
+6. **Validación** - Verificar funcionamiento
+7. **Documentación** - Actualizar registros
 
 ### Configuración del Entorno
-1. Configurar VS Code con extensiones recomendadas
-2. Seguir las convenciones de código establecidas
-3. Usar la metodología de desarrollo documentada
+1. Usar VS Code con extensiones recomendadas (ver `.vscode/extensions.json`)
+2. Seguir convenciones de Git documentadas
+3. Activar modo mentor de Copilot para aprendizaje guiado
 
-## 🤝 Contribución
+### Comandos Útiles
+```bash
+# Activar contexto de aprendizaje en Copilot
+@workspace Activar modo mentor académico para Comision-20015
 
-Las contribuciones son bienvenidas. Por favor:
+# Ver documentación completa
+code .vscode/README.md
+```
 
-1. Fork del proyecto
-2. Crear rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit de cambios (`git commit -m 'feat: agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Abrir Pull Request
+## 📚 Proceso de Aprendizaje
 
-### Convenciones de Código
-- Seguir las convenciones establecidas en `.vscode/git-conventions.md`
-- Código comentado y autodocumentado
-- Tests para nuevas funcionalidades
-
-## 📈 Métricas del Proyecto
-
+### 📊 Progreso del Curso
+- **Duración del proyecto:** 4 semanas
+- **Archivos desarrollados:** 15+
+- **Commits realizados:** 20+
 - **Líneas de código:** ~2,000+
-- **Archivos:** 15+
-- **Commits:** 20+
-- **Tiempo de desarrollo:** 4 semanas
 
-## 🐛 Reportar Issues
+### 🎓 Objetivos de Aprendizaje Cumplidos
+- [x] Estructura HTML semántica
+- [x] Estilos CSS avanzados (Grid, Flexbox)
+- [x] JavaScript interactivo
+- [x] Integración con APIs externas
+- [x] Persistencia de datos local
+- [x] Diseño responsive
+- [x] Metodología de desarrollo profesional
 
-Si encuentras algún problema:
-1. Verificar que no esté reportado ya
-2. Crear issue con descripción detallada
-3. Incluir pasos para reproducir
-4. Screenshots si aplica
+### 🔄 En Proceso de Aprendizaje
+- [ ] **Sistema de búsqueda** (próximo objetivo)
+- [ ] Filtros avanzados
+- [ ] Validación de formularios
+- [ ] Optimización de rendimiento
 
-## 📄 Licencia
+## 🤝 Contexto Académico
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
+Este proyecto forma parte del portafolio académico de **Comisión 20015**.
 
-## 👨‍💻 Autor
+### Instructor/Mentor
+- Curso de Desarrollo Web
+- Enfoque en aprendizaje práctico
+- Metodología de desarrollo sostenible
 
-**Matías** - [GitHub](https://github.com/tu-usuario) | [LinkedIn](https://linkedin.com/in/tu-perfil)
+### Compañeros de Curso
+Los estudiantes pueden:
+1. Revisar el código para aprendizaje
+2. Sugerir mejoras académicas
+3. Compartir conocimientos del curso
+
+## 📄 Licencia Académica
+
+Este proyecto está bajo la Licencia MIT para fines educativos - ver el archivo [LICENSE](LICENSE) para detalles.
+
+## 👨‍🎓 Estudiante
+
+**Matías** - Estudiante de Desarrollo Web  
+**Comisión:** 20015  
+**GitHub:** [GaweinNakaros](https://github.com/GaweinNakaros)  
+**Proyecto:** [Comision-20015](https://github.com/GaweinNakaros/Comision-20015)
 
 ---
 
 <div align="center">
-  <p>⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!</p>
+  <p>📚 Proyecto académico en desarrollo continuo</p>
+  <p>🎓 Comisión 20015 - Desarrollo Web</p>
   
-  [![GitHub followers](https://img.shields.io/github/followers/tu-usuario?label=Follow&style=social)](https://github.com/tu-usuario)
-  [![GitHub stars](https://img.shields.io/github/stars/tu-usuario/ecommerce-tienda-web?style=social)](https://github.com/tu-usuario/ecommerce-tienda-web/stargazers)
+  [![Academic Project](https://img.shields.io/badge/Proyecto-Académico-blue)](https://github.com/GaweinNakaros/Comision-20015)
+  [![Learning](https://img.shields.io/badge/Estado-Aprendiendo-brightgreen)](https://github.com/GaweinNakaros/Comision-20015)
 </div>
 
 
