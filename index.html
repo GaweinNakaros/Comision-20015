@@ -50,7 +50,7 @@
                     <p>Encuentra los mejores productos para ti.</p>
                 </div>
                 <div class="banner">
-                    <img src="../img/banner.jpg" alt="Banner de la tienda">      
+                    <img src="./img/banner.jpg" alt="Banner de la tienda">      
                 </div>
             </div>
             <!-- barra de busqueda -->
@@ -58,22 +58,64 @@
                 <input type="text" placeholder="Encuentra el producto que estas buscando" class="search-input">
                 <button class="search-button">Buscar</button>
             </div> 
-            <!-- Carrusel de productos -->
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+            <!-- Tres carruseles lado a lado -->
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Carrusel 1 -->
+                    <div class="col-md-4">
+                        <h5 class="text-center mb-3">Grupo 1</h5>
+                        <div id="carouselGrupo1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carrusel1">
+                                <!-- Productos 0-4 -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrupo1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGrupo1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Carrusel 2 -->
+                    <div class="col-md-4">
+                        <h5 class="text-center mb-3">Grupo 2</h5>
+                        <div id="carouselGrupo2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carrusel2">
+                                <!-- Productos 5-9 -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrupo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGrupo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Carrusel 3 -->
+                    <div class="col-md-4">
+                        <h5 class="text-center mb-3">Grupo 3</h5>
+                        <div id="carouselGrupo3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carrusel3">
+                                <!-- Productos 10-14 -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrupo3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGrupo3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+            </div>
         </main>
         <footer class="footer-container"> 
             <div class="footer-column">
