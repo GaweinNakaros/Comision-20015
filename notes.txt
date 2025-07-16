@@ -64,3 +64,12 @@
 # Última actualización: 14/07/2025
 # Estado: Base académica limpia establecida
 # Próximo objetivo: Sistema de búsqueda de productos
+
+----------
+
+### Historial:
+
+Ampliacion_Web (principal)
+├── archive/feature-name-v1.0  (versiones archivadas)
+├── feature/nueva-caracteristica (trabajo activo)
+└── backup-fecha (puntos de restauración generales)
